@@ -1,0 +1,37 @@
+.history-section {
+  background-color: rgba(255, 127, 63, 0.05);
+  padding: var(--space-xl) 0;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.history-text p {
+  margin-bottom: var(--space-md);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.history-text p:first-child {
+  font-weight: 500;
+}
+
+.history-image img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .history-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .history-image {
+    order: -1;
+  }
+}

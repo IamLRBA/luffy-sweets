@@ -1,0 +1,33 @@
+.contact-page {
+  padding-top: var(--space-xl);
+}
+
+.contact-hero {
+  text-align: center;
+  padding: var(--space-xl) 0;
+  background: linear-gradient(135deg, rgba(156,81,182,0.1) 0%, rgba(95,158,79,0.1) 100%);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-hero h1 {
+  margin-bottom: var(--space-sm);
+  font-size: 3rem;
+}
+
+.contact-hero p {
+  font-size: 1.25rem;
+  color: var(--dark-gray);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
