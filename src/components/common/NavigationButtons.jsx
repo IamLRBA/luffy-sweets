@@ -6,16 +6,16 @@ const NavigationButtons = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="navigation-buttons">
+    <div className="floating-nav-buttons">
       <button 
-        className="nav-button" 
+        className="btn btn-secondary nav-button" 
         onClick={() => navigate(-1)}
         aria-label="Previous page"
       >
         <i className="fas fa-arrow-left"></i>
       </button>
       <button 
-        className="nav-button" 
+        className="btn btn-primary nav-button" 
         onClick={() => navigate(1)}
         aria-label="Next page"
       >

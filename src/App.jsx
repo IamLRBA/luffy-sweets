@@ -12,13 +12,14 @@ import OrderNow from './pages/OrderNow';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import './App.css';
+import './global.css'; // Make sure this is imported
 
 const App = () => {
   return (
     <Router>
       <div className="app">
         <Navbar />
-        <main>
+        <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />

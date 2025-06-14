@@ -25,8 +25,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="navbar-container">
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'mobile-open' : ''}`}>
+      <div className="container">
         <div className="navbar-brand">
           <Link to="/">
             <img src="/images/logo.png" alt="Luffy Sweets" className="logo" />
@@ -36,7 +36,12 @@ const Navbar = () => {
 
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navItems.map((item) => (
-            <Link key={item.name} to={item.path} className="nav-item">
+            <Link 
+              key={item.name} 
+              to={item.path} 
+              className="nav-item"
+              onClick={() => setIsMenuOpen(false)}
+            >
               {item.name}
             </Link>
           ))}
