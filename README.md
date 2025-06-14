@@ -1,12 +1,59 @@
-# React + Vite
+# Luffy Sweets - React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated website for Luffy Sweets, a sweet manufacturing company based in Jinja, Uganda.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design with mobile-first approach
+- Animated hero slider with autoplay and manual controls
+- Product showcase with individual product pages
+- Order form with invoice generation
+- Contact page with map integration
+- About Us page with team hierarchy display
+- Privacy Policy and Terms of Service pages
+- Scroll-to-top button
+- Navigation history buttons
+- Search functionality
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- React Router
+- Framer Motion (for animations)
+- CSS Modules
+- Font Awesome (for icons)
+- Google Maps API (for contact page)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/luffy-sweets.git
+
+Install dependencies:
+bash
+
+npm install
+
+Start the development server:
+bash
+
+    npm start
+
+Configuration
+
+    Create a .env file in the root directory with your Google Maps API key:
+    REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key_here
+
+Deployment
+
+To build the app for production:
+bash
+
+npm run build
+
+Deploy the contents of the build folder to your hosting service.
+License
+
+This project is licensed under the MIT License.
+

@@ -1,0 +1,69 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import ProductGrid from '../components/products/ProductGrid';
+import './Products.css';
+
+const Products = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const products = [
+    {
+      id: 1,
+      name: 'Luffy Lollipop',
+      description: 'Delicious orange-flavored lollipops with a tangy twist',
+      price: 1.99,
+      image: '/images/lollipop.jpg',
+      theme: 'orange'
+    },
+    {
+      id: 2,
+      name: 'Luffy Ice',
+      description: 'Refreshing green mint candies that cool your senses',
+      price: 2.49,
+      image: '/images/ice.jpg',
+      theme: 'green'
+    },
+    {
+      id: 3,
+      name: 'Luffy Eclairs',
+      description: 'Creamy purple vanilla eclair candies with smooth filling',
+      price: 3.99,
+      image: '/images/eclairs.jpg',
+      theme: 'purple'
+    }
+  ];
+
+  const filteredProducts = products.filter(product =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    product.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div className="products-page">
+      <section className="products-hero">
+        <h1 className="highlight-box">Our Sweet Creations</h1>
+        <p>Handcrafted with love using the finest ingredients</p>
+      </section>
+
+      <div className="products-search">
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+
+      <ProductGrid products={filteredProducts} />
+
+      <div className="products-cta">
+        <h2>Can't find what you're looking for?</h2>
+        <Link to="/contact" className="btn btn-primary">
+          Contact Us
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Products;

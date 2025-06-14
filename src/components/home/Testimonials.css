@@ -1,0 +1,25 @@
+.testimonials-section {
+  padding: var(--space-xl) 0;
+  background-color: white;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.scroll-down {
+  display: block;
+  text-align: center;
+  color: var(--purple);
+  font-weight: 500;
+  margin-top: var(--space-xl);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.scroll-down:hover {
+  color: var(--purple-dark);
+}
