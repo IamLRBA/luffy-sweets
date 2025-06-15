@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const product = {
     id: 1,
     name: 'Luffy Lollipop',
-    description: 'Our signature orange-flavored lollipop made with natural fruit extracts and premium ingredients. Each lollipop is handcrafted to perfection, delivering a burst of citrusy sweetness that lasts.',
+    description: 'Burst into the Orange bliss of our signature sweet and tangy, orange-flavored lollipop made with natural fruit extracts and premium ingredients. Each lollipop is handcrafted to perfection, delivering a burst of citrusy sweetness that lasts.',
     price: 1.99,
     images: [
       '/images/lollipop-1.jpg',

@@ -12,6 +12,9 @@ body {
   color: var(--dark-gray);
   background-color: var(--light-gray);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  padding-top: var(--navbar-height);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -135,3 +138,4 @@ section {
 .slide-up {
   animation: slideUp var(--transition-medium) forwards;
 }
+

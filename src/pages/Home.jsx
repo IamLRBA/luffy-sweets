@@ -8,10 +8,21 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="home-page">
-      <HeroSlider />
-      <FeaturedCollections />
-      <Testimonials />
-      <MessageSection />
+      <section className="hero-section">
+        <HeroSlider />
+      </section>
+
+      <section className="grid-container">
+        <FeaturedCollections />
+      </section>
+
+      <section className="testimonials-section">
+        <Testimonials />
+      </section>
+
+      <section className="message-section">
+        <MessageSection />
+      </section>
     </div>
   );
 };

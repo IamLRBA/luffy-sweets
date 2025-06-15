@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import OrderNow from './pages/OrderNow';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import GalleryPage from './pages/GalleryPage';
 import './App.css';
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/order" element={<OrderNow />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
         </main>
         <Footer />
