@@ -163,6 +163,10 @@
   align-items: center;
 }
 
+.scroll-down:hover {
+  color: var(--green-dark);
+}
+
 .scroll-down::after {
   content: '↓';
   margin-top: 0.5rem;

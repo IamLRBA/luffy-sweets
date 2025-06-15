@@ -23,20 +23,20 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .navbar-brand {
   font-family: 'Raleway', sans-serif;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--orange-dark);
 }
 
 .navbar-brand span {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 
 .logo {
@@ -47,7 +47,7 @@
 
 .nav-links {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .nav-item {
