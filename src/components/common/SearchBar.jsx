@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { HiOutlineSearch } from 'react-icons/hi';
 import './SearchBar.css';
 
 const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Implement search functionality
-    console.log('Searching for:', searchQuery);
+    if (searchQuery.trim()) {
+      navigate(`/products?search=${encodeURIComponent(searchQuery)}`);
+    }
   };
 
   return (
-    <form className="search-bar" onSubmit={handleSearch}>
-      <input
-        type="text"
-        placeholder="Search products..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-      <button type="submit" aria-label="Search">
-        <i className="fas fa-search"></i>
-      </button>
-    </form>
+    <div className="search-container">
+      <HiOutlineSearch className="search-nav-icon" />
+      <form className="search-bar" onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </form>
+    </div>
   );
 };
 

@@ -11,15 +11,15 @@ import Contact from './pages/Contact';
 import OrderNow from './pages/OrderNow';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import GalleryPage from './pages/GalleryPage';
 import './App.css';
-import './global.css'; // Make sure this is imported
 
 const App = () => {
   return (
     <Router>
       <div className="app">
         <Navbar />
-        <main className="main-content">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
@@ -28,6 +28,7 @@ const App = () => {
             <Route path="/order" element={<OrderNow />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/gallery" element={<GalleryPage />} />
           </Routes>
         </main>
         <Footer />

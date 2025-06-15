@@ -1,35 +1,34 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import HamburgerMenu from './HamburgerMenu';
 import SearchBar from './SearchBar';
+import {
+  HiOutlineHome,
+  HiOutlineShoppingBag,
+  HiOutlineUserGroup,
+  HiOutlineMail,
+  HiOutlineShoppingCart
+} from 'react-icons/hi';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Products', path: '/products' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact Us', path: '/contact' },
-    { name: 'Order Now', path: '/order' },
+    { name: 'Home', path: '/', icon: <HiOutlineHome className="nav-icon" /> },
+    { name: 'Products', path: '/products', icon: <HiOutlineShoppingBag className="nav-icon" /> },
+    { name: 'Us', path: '/about', icon: <HiOutlineUserGroup className="nav-icon" /> },
+    { name: 'Contact', path: '/contact', icon: <HiOutlineMail className="nav-icon" /> },
+    { name: 'Order Now', path: '/order', icon: <HiOutlineShoppingCart className="nav-icon" /> },
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'mobile-open' : ''}`}>
-      <div className="container">
+    <nav className="navbar">
+      <div className="navbar-container">
         <div className="navbar-brand">
           <Link to="/">
-            <img src="/images/logo.png" alt="Luffy Sweets" className="logo" />
+            <img src="/images/logo.png" alt="Luffy" className="logo" />
             <span>LUFFY SWEETS</span>
           </Link>
         </div>
@@ -39,9 +38,9 @@ const Navbar = () => {
             <Link 
               key={item.name} 
               to={item.path} 
-              className="nav-item"
-              onClick={() => setIsMenuOpen(false)}
+              className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
             >
+              {item.icon}
               {item.name}
             </Link>
           ))}

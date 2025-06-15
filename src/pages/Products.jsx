@@ -1,10 +1,20 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import ProductGrid from '../components/products/ProductGrid';
 import './Products.css';
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    // Get search term from URL when component mounts or location changes
+    const searchParams = new URLSearchParams(location.search);
+    const urlSearchTerm = searchParams.get('search');
+    if (urlSearchTerm) {
+      setSearchTerm(urlSearchTerm);
+    }
+  }, [location.search]);
 
   const products = [
     {
@@ -53,6 +63,15 @@ const Products = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
+
+      {searchTerm && (
+        <div className="search-results-info">
+          <h3>Search results for: "{searchTerm}"</h3>
+          {filteredProducts.length === 0 && (
+            <p>No products found matching your search.</p>
+          )}
+        </div>
+      )}
 
       <ProductGrid products={filteredProducts} />
 
