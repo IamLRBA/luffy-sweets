@@ -57,6 +57,7 @@ const FeaturedCollections = () => {
           Scroll Down to See Our Client's Testimonials ↓
         </a>
       </div>
+      
     </section>
   );
 };

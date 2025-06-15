@@ -63,10 +63,10 @@ const Footer = () => {
           <ul className="footer-links">
             <li><Link to="/"><Home className="link-icon" /> Home</Link></li>
             <li><Link to="/products"><ShoppingBag className="link-icon" /> Products</Link></li>
-            <li><Link to="/gallery"><Image className="link-icon" /> Gallery</Link></li>
             <li><Link to="/about"><Users className="link-icon" /> Our Story</Link></li>
             <li><Link to="/contact"><MessageSquare className="link-icon" /> Let’s Chat</Link></li>
             <li><Link to="/order"><ShoppingCart className="link-icon" /> Make an Order</Link></li>
+            <li><Link to="/gallery"><Image className="link-icon" /> Gallery</Link></li>
           </ul>
         </div>
 

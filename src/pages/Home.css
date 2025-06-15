@@ -23,3 +23,75 @@
   40% { transform: translateY(-20px) translateX(-50%); }
   60% { transform: translateY(-10px) translateX(-50%); }
 }
+
+.highlight-box {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  margin-right: 0.5rem;
+}
+
+.highlight-box.orange {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: var(--orange-dark);
+}
+
+.highlight-box.green {
+  background-color: rgba(95, 158, 79, 0.2);
+  color: var(--green-dark);
+}
+
+.highlight-box.purple {
+  background-color: rgba(147, 112, 219, 0.2);
+  color: var(--purple-dark);
+}
+
+/* Connector illustration */
+.home-page {
+  position: relative;
+}
+
+.home-page::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, 
+    var(--orange) 0%, 
+    var(--green) 50%, 
+    var(--purple) 100%);
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.scroll-down {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.scroll-down::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid currentColor;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.scroll-down:hover {
+  transform: translateY(5px);
+}
+
+.scroll-down:hover::after {
+  border-top-color: currentColor;
+}

@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-brand">
           <Link to="/">
-            <img src="/images/logo.png" alt="Luffy" className="logo" />
+            <img src="/images/logo.png" alt="Luf" className="logo" />
             <span>LUFFY SWEETS</span>
           </Link>
         </div>

@@ -10,10 +10,6 @@ const Home = () => {
     <div className="home-page">
       <section className="hero-section">
         <HeroSlider />
-        <div className="scroll-prompt">
-          <span>Scroll Down</span>
-          <i className="fas fa-chevron-down"></i>
-        </div>
       </section>
 
       <section className="grid-container">

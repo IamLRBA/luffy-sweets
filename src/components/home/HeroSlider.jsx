@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './HeroSlider.css';
 
 const slides = [
@@ -105,11 +106,11 @@ const HeroSlider = () => {
       </div>
 
       <button className="slider-nav prev" onClick={goToPrev}>
-        &lt;
-      </button>
-      <button className="slider-nav next" onClick={goToNext}>
-        &gt;
-      </button>
+  <FaChevronLeft />
+</button>
+<button className="slider-nav next" onClick={goToNext}>
+  <FaChevronRight />
+</button>
 
       <div className="slider-dots">
         {slides.map((_, index) => (
