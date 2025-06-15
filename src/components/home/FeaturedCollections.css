@@ -72,6 +72,7 @@
 
 .collection-card.orange .btn-outline:hover {
   background-color: var(--orange);
+  color: white;
 }
 
 .collection-card.green .btn-outline {
@@ -81,6 +82,7 @@
 
 .collection-card.green .btn-outline:hover {
   background-color: var(--green);
+  color: white;
 }
 
 .collection-card.purple .btn-outline {
@@ -90,6 +92,7 @@
 
 .collection-card.purple .btn-outline:hover {
   background-color: var(--purple);
+  color: white;
 }
 
 .scroll-down {
@@ -103,7 +106,7 @@
 }
 
 .scroll-down:hover {
-  color: var(--orange-dark);
+  color: var(--green-dark);
 }
 
 @media (max-width: 768px) {

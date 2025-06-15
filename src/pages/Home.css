@@ -90,6 +90,7 @@
 
 .scroll-down:hover {
   transform: translateY(5px);
+  color: var(--green-dark);
 }
 
 .scroll-down:hover::after {
