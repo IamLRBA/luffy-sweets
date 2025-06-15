@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap');
+
 .products-page {
   padding-top: var(--space-xl);
 }
@@ -11,12 +14,14 @@
 
 .products-hero h1 {
   margin-bottom: var(--space-sm);
+  font-family: 'Raleway', sans-serif;
   font-size: 3rem;
 }
 
 .products-hero p {
-  font-size: 1.25rem;
-  color: var(--dark-gray);
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.25rem;
+  color: var(--purple-dark);
 }
 
 .products-search {
@@ -49,6 +54,7 @@
 }
 
 .products-cta h2 {
+  font-family: 'Raleway', sans-serif;
   margin-bottom: var(--space-md);
   color: var(--green-dark);
 }

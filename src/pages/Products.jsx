@@ -51,7 +51,7 @@ const Products = () => {
   return (
     <div className="products-page">
       <section className="products-hero">
-        <h1 className="highlight-box">Our Sweet Creations</h1>
+        <h1> Our Sweet <span className="highlight-box orange">Creations</span></h1>
         <p>Handcrafted with love using the finest ingredients</p>
       </section>
 
