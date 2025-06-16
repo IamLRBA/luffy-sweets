@@ -38,7 +38,7 @@ const Gallery = () => {
     setImages(loadedImages);
   }, []);
 
-  // Animation loop (same as before)
+  // Animation loop (fixed with let instead of const)
   useEffect(() => {
     if (expandedImage) return;
 
@@ -64,7 +64,7 @@ const Gallery = () => {
       );
     };
 
-    const animationId = requestAnimationFrame(function animate() {
+    let animationId = requestAnimationFrame(function animate() {
       moveImages();
       animationId = requestAnimationFrame(animate);
     });
