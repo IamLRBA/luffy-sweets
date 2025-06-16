@@ -21,7 +21,7 @@ const FeaturedCollections = () => {
     {
       id: 3,
       name: 'Luffy Eclairs Collection',
-      description: 'Creamy vanilla eclair candies with smooth filling',
+      description: 'Creamy chocolate eclair candies with smooth filling',
       image: '/images/eclair-collection.jpg',
       theme: 'purple'
     }

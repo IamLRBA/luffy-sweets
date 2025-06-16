@@ -7,10 +7,53 @@
 .message-content {
   max-width: 900px;
   margin: 0 auto;
-  background-color: white;
-  padding: var(--space-xl);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.92); /* Semi-transparent white */
+  padding: var(--space-xl);border: 3px solid var(--white);
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.58),
+    0 0 0 1px rgba(240, 240, 240, 0.669) inset;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(2px); /* Subtle glass effect */
+}
+
+.message-content::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: 
+    linear-gradient(
+      rgba(83, 128, 66, 0.765),
+      rgba(164, 230, 159, 0.799) 80%
+    ),
+    url('/images/image11.jpg') center/cover no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+  opacity: 0.7;
+  animation: backgroundPan 100s linear infinite; /* Very slow movement */
+  background-size: 120% 120%;
+  border-radius: calc(var(--radius-lg) + 20px); /* Match container radius */
+}
+
+/* Existing animation reused */
+@keyframes backgroundPan {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 40% 10%; }
+  50% { background-position: 80% 20%; }
+  75% { background-position: 40% 10%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .message-content::before {
+    animation: none; /* Disable animation on mobile */
+    background-position: center;
+  }
 }
 
 .message-form {
@@ -111,6 +154,32 @@ textarea {
   border-radius: var(--radius-md);
   background-color: rgba(95, 158, 79, 0.05);
   border-top: 1px solid rgba(95, 158, 79, 0.1);
+  position: relative;
+  overflow: hidden;
+  /* Glass effect overlay */
+  backdrop-filter: blur(1px);
+}
+
+.whatsapp-option::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: 
+    /* Green tint matching your theme */
+    linear-gradient(
+      rgba(63, 117, 50, 0.717),
+      rgba(35, 70, 26, 0.637) 80%
+    ),
+    url('/images/background15.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+  opacity: 0.4; /* Very subtle */
+  animation: backgroundPan 120s linear infinite; /* Slowest animation */
+  background-size: 120% 120%;
+  border-radius: calc(var(--radius-md) + 10px); /* Match container */
 }
 
 .whatsapp-header {
