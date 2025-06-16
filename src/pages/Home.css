@@ -4,7 +4,7 @@
 
 .hero-section {
   position: relative;
-  margin-top: 70px; /* Offset for fixed navbar */
+  margin-top: 70px; 
 }
 
 .scroll-prompt {

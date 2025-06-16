@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       id: 1,
       content: "Luffy Sweets has the most delicious candies I've ever tasted. My kids can't get enough of the Luffy Lollipops!",
-      name: "Sarah K.",
+      name: "Sarah Kanyomozi.",
       position: "Happy Customer",
       avatar: "/images/testimonial1.jpg",
       rating: 5
@@ -15,7 +15,7 @@ const Testimonials = () => {
     {
       id: 2,
       content: "As a retailer, I've been selling Luffy Sweets for years and they're always the first to sell out. Excellent quality!",
-      name: "James M.",
+      name: "James Matthew Walugembe.",
       position: "Store Owner",
       avatar: "/images/testimonial2.jpg",
       rating: 5
@@ -23,7 +23,7 @@ const Testimonials = () => {
     {
       id: 3,
       content: "The Luffy Eclairs are my absolute favorite. Creamy, delicious, and the perfect treat after a long day.",
-      name: "Amina W.",
+      name: "Amina Namata.",
       position: "Loyal Customer",
       avatar: "/images/testimonial3.jpg",
       rating: 4
@@ -31,7 +31,7 @@ const Testimonials = () => {
     {
       id: 4,
       content: "The customer service is exceptional. They went above and beyond to fulfill my bulk order request.",
-      name: "David T.",
+      name: "David Taban Musobya.",
       position: "Event Planner",
       avatar: "/images/testimonial4.jpg",
       rating: 5
@@ -39,7 +39,7 @@ const Testimonials = () => {
     {
       id: 5,
       content: "As a diabetic, I appreciate their sugar-free options that don't compromise on taste.",
-      name: "Grace L.",
+      name: "Grace Nabirye.",
       position: "Health-conscious Customer",
       avatar: "/images/testimonial5.jpg",
       rating: 4

@@ -1,6 +1,46 @@
 .featured-collections {
   padding: var(--space-xl) 0;
-  background-color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+}
+
+.featured-collections::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* White gradient overlay to maintain brightness */
+    linear-gradient(
+      rgba(142, 81, 182, 0.409),
+      rgba(181, 119, 219, 0.457) 80%
+    ),
+    url('/images/background58.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+  opacity: 0.9;
+  animation: backgroundPan 60s linear infinite;
+  background-size: 120% 120%;
+}
+
+/* Content container to ensure readability */
+.featured-collections-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Reuse the same animation */
+@keyframes backgroundPan {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 40% 10%; }
+  50% { background-position: 80% 20%; }
+  75% { background-position: 40% 10%; }
+  100% { background-position: 0% 0%; }
 }
 
 .collections-grid {
@@ -13,9 +53,13 @@
 .collection-card {
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
   transition: var(--transition-medium);
   position: relative;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.509),
+    0 5px 1px rgba(174, 174, 174, 0.543) inset;
 }
 
 .collection-card:hover {
@@ -24,7 +68,7 @@
 }
 
 .collection-image {
-  height: 250px;
+  height: 390px;
   overflow: hidden;
 }
 

@@ -43,11 +43,59 @@
   width: 80%;
   max-width: 600px;
   padding: 2.5rem;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.58),
+    0 0 0 1px rgba(240, 240, 240, 0.669) inset; 
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform, opacity;
+  backdrop-filter: blur(2px); /* Subtle glass effect */
+  overflow: hidden; /* For pseudo-element */
+  z-index: 2; /* Above section background */
+}
+
+/* Subtle texture overlay */
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: 
+    linear-gradient(
+      rgba(110, 231, 99, 0.425),
+      rgba(9, 137, 11, 0.436)
+    ),
+    url('/images/background16.jpg') center/cover no-repeat;
+  filter: blur(1px);
+  z-index: -1;
+  opacity: 0.4;
+  animation: backgroundPan 120s linear infinite;
+  background-size: 120% 120%;
+  border-radius: 25px; /* Larger radius to match card scaling */
+}
+
+@keyframes backgroundPan {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 40% 10%; }
+  50% { background-position: 80% 20%; }
+  75% { background-position: 40% 10%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 90%;
+    padding: 1.8rem;
+  }
+  
+  .testimonial-card::before {
+    animation: none;
+    background-position: center;
+  }
 }
 
 .testimonial-card:active {

@@ -8,8 +8,63 @@
 .products-hero {
   text-align: center;
   padding: var(--space-xl) 0;
-  background: linear-gradient(135deg, rgba(255,127,63,0.1) 0%, rgba(156,81,182,0.1) 100%);
+  position: relative;
+  overflow: hidden;
   margin-bottom: var(--space-xl);
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  width: 1000px;
+  margin-left: 70px;
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.422),
+    0 5px 1px rgba(174, 174, 174, 0.543) inset;
+}
+
+.products-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* Your original gradient with enhanced opacity */
+    linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.324) 0%, 
+      rgba(255, 255, 255, 0.299) 100%
+    ),
+    /* Background pattern */
+    url('/images/background44.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+  opacity: 0.9;
+  animation: productsHeroPan 70s linear infinite;
+  background-size: 120% 120%;
+}
+
+/* Custom animation for diagonal movement */
+@keyframes productsHeroPan {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 50% 25%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 25%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .products-hero::before {
+    animation-duration: 100s;
+    filter: blur(2px);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .products-hero::before {
+    animation: none;
+    background-position: center;
+  }
 }
 
 .products-hero h1 {
@@ -19,9 +74,9 @@
 }
 
 .products-hero p {
-  font-family: 'Great Vibes', cursive;
-  font-size: 3.25rem;
-  color: var(--purple-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: var(--white);
 }
 
 .products-search {
@@ -48,9 +103,63 @@
 .products-cta {
   text-align: center;
   padding: var(--space-xl) 0;
-  background-color: rgba(95,158,79,0.1);
-  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  width: 1000px;
+  margin-left: 70px;
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.509),
+    0 5px 1px rgba(174, 174, 174, 0.543) inset;
   margin-top: var(--space-xl);
+  margin-bottom: 50px;
+}
+
+.products-cta::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: 
+    linear-gradient(
+      rgba(249, 249, 249, 0.231),
+      rgba(255, 255, 255, 0.242) 80%
+    ),
+    url('/images/background61.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+  opacity: 0.7;
+  animation: ctaBackgroundFlow 90s ease-in-out infinite alternate;
+  background-size: 130% 130%;
+  border-radius: calc(var(--radius-lg) + 20px);
+}
+
+/* Organic flow animation */
+@keyframes ctaBackgroundFlow {
+  0% {
+    background-position: 15% 15%;
+    transform: scale(1);
+  }
+  50% {
+    background-position: 85% 85%;
+    transform: scale(1.01);
+  }
+  100% {
+    background-position: 15% 15%;
+    transform: scale(1);
+  }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .products-cta::before {
+    animation: none;
+    background-position: center;
+    filter: blur(2px);
+  }
 }
 
 .products-cta h2 {
@@ -71,8 +180,10 @@
   background-color: white;
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.639);
   transition: var(--transition-medium);
+  border: 3px solid var(--white);
 }
 
 .product-card:hover {
@@ -81,7 +192,7 @@
 }
 
 .product-image {
-  height: 200px;
+  height: 390px;
   overflow: hidden;
 }
 
