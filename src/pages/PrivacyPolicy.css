@@ -48,3 +48,9 @@
   line-height: 1.7;
   color: var(--dark-gray);
 }
+
+.highlight-border {
+  border: 3px solid var(--orange);
+  border-radius: var(--radius-md);
+  padding: 0.2rem 0.8rem;
+}

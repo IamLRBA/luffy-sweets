@@ -7,7 +7,7 @@ const TermsOfService = () => {
       <section className="terms-hero">
         <div className="container">
           <h1 className="highlight-box">Terms of Service</h1>
-          <p>Last updated: June 14, 2023</p>
+          <p>Last updated: June 14, 2025</p>
         </div>
       </section>
       <div className="terms-content">

@@ -95,7 +95,7 @@ const OrderNow = () => {
   return (
     <div className="order-page">
       <section className="order-hero">
-        <h1 className="highlight-text">Place Your Order</h1>
+        <h1> <span className="highlight-text">Place Your</span> <span className="highlight-border">mission</span></h1>
         <p>Fill out the form below to order your favorite sweets</p>
       </section>
 
