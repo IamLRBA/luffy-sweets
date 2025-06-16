@@ -20,7 +20,7 @@ const ContactInfo = () => {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      content: "luffysweets@gmail.com",
+      content: "jerrylarubafestus@gmail.com",
       color: "var(--purple)"
     },
     {
@@ -74,7 +74,7 @@ const ContactInfo = () => {
         transition={{ delay: 0.7, duration: 0.6 }}
       >
         <a 
-          href="https://wa.me/256750367229" 
+          href="https://wa.me/256700416812" 
           className="btn whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"

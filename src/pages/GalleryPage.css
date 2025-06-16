@@ -74,7 +74,7 @@ body {
   font-size: 4rem;
   text-align: center;
   margin-bottom: var(--space-sm);
-  color: var(--purple-dark);
+  color: var(--green-dark);
   text-shadow: var(--shadow-sm);
   animation: float 3s ease-in-out infinite;
 }
@@ -89,18 +89,25 @@ body {
 
 .gallery-grid {
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   width: 100%;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--light-gray), var(--medium-gray));
+  background: linear-gradient(135deg, rgb(0, 35, 3), rgb(180, 249, 169));
   box-shadow: var(--shadow-md);
   overflow: hidden;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 30px rgba(17, 17, 17, 0.422),
+    0 5px 1px rgba(53, 53, 53, 0.543) inset;
 }
 
 .gallery-item {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+  border: 3px solid var(--white);
+  border-radius: 10px;
   cursor: pointer;
   transition: var(--transition-medium);
   z-index: 1;
@@ -179,11 +186,11 @@ body {
 
 .close-button {
   position: absolute;
-  top: -40px;
+  top: 80px;
   right: -40px;
   width: 50px;
   height: 50px;
-  background-color: var(--purple);
+  background-color: var(--orange);
   border: none;
   border-radius: var(--radius-round);
   display: flex;
@@ -195,7 +202,7 @@ body {
 }
 
 .close-button:hover {
-  background-color: var(--purple-dark);
+  background-color: var(--orange-light);
   transform: rotate(90deg) scale(1.1);
 }
 

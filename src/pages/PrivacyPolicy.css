@@ -5,8 +5,64 @@
 .policy-hero {
   text-align: center;
   padding: var(--space-xl) 0;
-  background: linear-gradient(135deg, rgba(255,127,63,0.1) 0%, rgba(95,158,79,0.1) 100%);
   margin-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 30px rgba(17, 17, 17, 0.422),
+    0 5px 1px rgba(53, 53, 53, 0.543) inset;
+}
+
+.policy-hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  background: 
+    /* Color-coordinated overlay */
+    linear-gradient(135deg, 
+      rgba(255, 127, 63, 0.05) 0%, 
+      rgba(95, 158, 79, 0.05) 100%
+    ),
+    /* Background pattern */
+    url('/images/background94.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: 0;
+  opacity: 0.5;
+  animation: policyBackgroundScroll 100s linear infinite;
+  background-size: 120% 120%;
+  background-blend-mode: multiply;
+}
+
+/* Subtle document scroll effect */
+@keyframes policyBackgroundScroll {
+  0% { background-position: 0% 10%; }
+  50% { background-position: 100% 90%; }
+  100% { background-position: 0% 10%; }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .policy-hero::before {
+    animation: none;
+    background-position: center;
+    opacity: 0.3;
+  }
+  
+  .policy-hero-content {
+    padding: var(--space-md);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .policy-hero::before {
+    animation: none;
+  }
 }
 
 .policy-hero h1 {

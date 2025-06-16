@@ -1,9 +1,69 @@
 .stats-section {
   padding: var(--space-xl) 0;
-  background: linear-gradient(135deg, var(--orange) 0%, var(--purple) 100%);
   color: white;
   position: relative;
   overflow: hidden;
+  height: 300px;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  background: 
+    /* Color-enhancing overlay */
+    linear-gradient(135deg, 
+      rgba(29, 65, 18, 0.55) 0%, 
+      rgba(25, 65, 33, 0.516) 100%
+    ),
+    /* Background pattern */
+    url('/images/background82.jpg') center/cover no-repeat;
+  filter: blur(5px);
+  z-index: 0;
+  opacity: 0.6;
+  animation: statsBackgroundFlow 60s linear infinite;
+  background-size: 150% 150%;
+  background-blend-mode: overlay;
+}
+
+/* Diagonal flow animation */
+@keyframes statsBackgroundFlow {
+  0% { 
+    background-position: 0% 0%;
+    transform: scale(1);
+  }
+  50% { 
+    background-position: 100% 100%;
+    transform: scale(1.02);
+  }
+  100% { 
+    background-position: 0% 0%;
+    transform: scale(1);
+  }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .stats-section::before {
+    animation: statsBackgroundPanMobile 90s linear infinite;
+    filter: blur(3px);
+  }
+  
+  @keyframes statsBackgroundPanMobile {
+    0% { background-position: 20% 20%; }
+    100% { background-position: 80% 80%; }
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .stats-section::before {
+    animation: none;
+    background-position: center;
+  }
 }
 
 .stats-grid {
@@ -17,12 +77,60 @@
 .stat-card {
   text-align: center;
   padding: var(--space-lg);
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-md);
-  backdrop-filter: blur(5px);
   transition: var(--transition-medium);
   border: 3px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  /* Glass effect enhancement */
+  background-color: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: 
+    /* Color-adaptive overlay */
+    linear-gradient(
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.15) 80%
+    ),
+    url('/images/background92.jpg') center/cover no-repeat;
+  filter: blur(6px);
+  z-index: -1;
+  opacity: 0.5;
+  animation: statCardPan 80s linear infinite;
+  background-size: 120% 120%;
+  border-radius: calc(var(--radius-md) + 20px);
+}
+
+/* Animation */
+@keyframes statCardPan {
+  0% { background-position: 0% 10%; }
+  50% { background-position: 100% 90%; }
+  100% { background-position: 0% 10%; }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .stat-card::before {
+    animation: none;
+    filter: blur(4px);
+    background-position: center;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-3px);
+  }
 }
 
 .stat-card:hover {

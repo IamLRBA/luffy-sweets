@@ -83,7 +83,7 @@ const ContactForm = () => {
       <div className="whatsapp-option">
         <p>Or contact us directly via WhatsApp:</p>
         <a 
-          href="https://wa.me/256750367229" 
+          href="https://wa.me/256700416812" 
           className="btn btn-secondary whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"

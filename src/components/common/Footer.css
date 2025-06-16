@@ -7,6 +7,9 @@
   position: relative;
   font-family: 'Segoe UI', sans-serif;
   overflow: hidden;
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.58),
+    0 0 0 1px rgba(9, 9, 9, 0.669) inset;
 }
 
 .site-footer::before {
@@ -18,10 +21,10 @@
   bottom: 0;
   background: 
     linear-gradient(
-      rgba(16, 67, 24, 0.705), 
+      rgba(16, 67, 24, 0.208), 
       var(--green-dark) 80% 
     ),
-    url('/images/background68.jpg') center/cover no-repeat;
+    url('/images/background81.jpg') center/cover no-repeat;
   filter: blur(2px);
   z-index: -1;
   opacity: 0.85;
@@ -52,7 +55,7 @@
 /* Wave Decoration */
 .footer-wave {
   position: absolute;
-  top: -47px;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 110px;

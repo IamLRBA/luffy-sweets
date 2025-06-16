@@ -32,6 +32,8 @@
   background-color: var(--light-gray);
   transition: var(--transition-medium);
   cursor: pointer;
+  border: 3px solid rgba(192, 192, 192, 0.425);
+  border-radius: 20px;
   flex: 1;
   min-width: 250px;
   max-width: 300px;
@@ -99,7 +101,7 @@
 }
 
 .short-description {
-  color: var(--medium-gray);
+  color: var(--dark-gray);
   font-size: 0.95rem;
   margin-bottom: var(--space-sm);
   transition: var(--transition-fast);
