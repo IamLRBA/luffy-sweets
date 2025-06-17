@@ -20,7 +20,7 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(255,127,63,0.1) 0%, rgba(255,127,63,0) 70%);
+  background: radial-gradient(circle, rgba(38, 82, 34, 0.482) 0%, rgba(74, 179, 81, 0.386) 70%);
   top: 10%;
   left: -100px;
   animation: float 8s ease-in-out infinite;
@@ -30,7 +30,7 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(156,81,182,0.1) 0%, rgba(156,81,182,0) 70%);
+  background: radial-gradient(circle, rgba(81, 182, 115, 0.372) 0%, rgba(81, 182, 132, 0.441)0) 70%;
   bottom: 20%;
   right: -150px;
   animation: float 10s ease-in-out infinite reverse;
@@ -40,7 +40,7 @@
   position: absolute;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(95,158,79,0.1) 0%, rgba(95,158,79,0) 70%);
+  background: radial-gradient(circle, rgba(95, 158, 79, 0.402) 0%, rgba(95, 158, 79, 0.584) 70%);
   top: 60%;
   left: 30%;
   animation: float 6s ease-in-out infinite 2s;
@@ -58,9 +58,77 @@
 .about-hero {
   text-align: center;
   padding: var(--space-xl) 0;
-  background: linear-gradient(135deg, rgba(255,127,63,0.05) 0%, rgba(156,81,182,0.05) 100%);
   margin-bottom: var(--space-xl);
   position: relative;
+  box-shadow: 
+    0 15px 30px rgba(17, 17, 17, 0.422),
+    0 5px 1px rgba(53, 53, 53, 0.543) inset;
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(1px);
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  background: 
+    /* Enhanced version of your gradient */
+    linear-gradient(135deg, 
+      rgba(255, 127, 63, 0.08) 0%, 
+      rgba(156, 81, 182, 0.08) 100%
+    ),
+    /* Background pattern */
+    url('/images/background92.jpg') center/cover no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+  opacity: 0.8;
+  animation: aboutHeroPan 80s linear infinite;
+  background-size: 120% 120%;
+  background-blend-mode: soft-light;
+}
+
+/* Diagonal animation matching gradient angle */
+@keyframes aboutHeroPan {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 40% 40%; }
+  50% { background-position: 80% 80%; }
+  75% { background-position: 40% 40%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* Content container */
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .about-hero::before {
+    animation: aboutHeroPanMobile 100s linear infinite;
+    filter: blur(2px);
+  }
+  
+  @keyframes aboutHeroPanMobile {
+    0% { background-position: 20% 20%; }
+    100% { background-position: 80% 80%; }
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .about-hero::before {
+    animation: none;
+    background-position: center;
+  }
 }
 
 .about-hero h1 {
@@ -80,7 +148,7 @@
 .highlight-box {
   display: inline-block;
   padding: 0.2rem 0.8rem;
-  background-color: var(--orange);
+  background-color: var(--green);
   color: white;
   border-radius: var(--radius-md);
   transform: rotate(0deg);
@@ -89,7 +157,7 @@
 }
 
 .highlight-text {
-  color: var(--purple);
+  color: var(--dark-gray);
   position: relative;
   display: inline-block;
 }
@@ -107,7 +175,7 @@
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: rgba(255,127,63,0.3);
+  background-color: rgba(197, 255, 63, 0.3);
   z-index: -1;
   transform: scaleX(0);
   transform-origin: left;

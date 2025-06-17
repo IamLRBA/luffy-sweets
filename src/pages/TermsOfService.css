@@ -5,9 +5,63 @@
 .terms-hero {
   text-align: center;
   padding: var(--space-xl) 0;
-  background: linear-gradient(135deg, rgba(156,81,182,0.1) 0%, rgba(95,158,79,0.1) 100%);
   margin-bottom: var(--space-xl);
+  border: 3px solid var(--white);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  /* Glass effect with your existing shadows */
+  box-shadow: 
+    0 15px 30px rgba(17, 17, 17, 0.422),
+    0 5px 1px rgba(53, 53, 53, 0.543) inset;
+  backdrop-filter: blur(3px);
 }
+
+.terms-hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: -10%;
+  bottom: -10%;
+  background: 
+    /* Legal document texture overlay */
+    linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 80%
+    ),
+    /* Background pattern */
+    url('/images/background85.jpg') center/cover no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+  opacity: 0.6;
+  animation: termsBackgroundFlow 120s linear infinite;
+  background-size: 120% 120%, cover;
+  background-blend-mode: overlay;
+  border-radius: 25px;
+}
+
+/* Formal document scroll effect */
+@keyframes termsBackgroundFlow {
+  0% { background-position: 0% 10%, 0 0; }
+  50% { background-position: 100% 90%, 0 0; }
+  100% { background-position: 0% 10%, 0 0; }
+}
+
+/* Mobile adaptation */
+@media (max-width: 768px) {
+  .terms-hero::before {
+    animation: none;
+    background-position: center, 0 0;
+    filter: blur(1px);
+  }}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .terms-hero::before {
+    animation: none;
+  }
+}  
 
 .terms-hero h1 {
   margin-bottom: var(--space-sm);

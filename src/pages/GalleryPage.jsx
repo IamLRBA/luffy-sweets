@@ -17,6 +17,8 @@ const Gallery = () => {
     { id: 8, filename: 'image8.jpg', alt: 'Chocolate truffles' },
     { id: 9, filename: 'image9.jpg', alt: 'Fruit tart' },
     { id: 10, filename: 'image10.jpg', alt: 'Donut variety' },
+    { id: 11, filename: 'image11.jpg', alt: 'Fruit tart' },
+    { id: 12, filename: 'image12.jpg', alt: 'Donut variety' }
   ];
 
   useEffect(() => {

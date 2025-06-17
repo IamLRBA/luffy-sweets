@@ -13,11 +13,9 @@
   margin-bottom: var(--space-xl);
   border: 3px solid var(--white);
   border-radius: 20px;
-  width: 1000px;
-  margin-left: 70px;
   box-shadow: 
-    0 15px 30px rgba(0, 0, 0, 0.422),
-    0 5px 1px rgba(174, 174, 174, 0.543) inset;
+    0 15px 30px rgba(17, 17, 17, 0.422),
+    0 5px 1px rgba(53, 53, 53, 0.543) inset;
 }
 
 .products-hero::before {
@@ -30,11 +28,11 @@
   background: 
     /* Your original gradient with enhanced opacity */
     linear-gradient(135deg, 
-      rgba(255, 255, 255, 0.324) 0%, 
-      rgba(255, 255, 255, 0.299) 100%
+      rgba(101, 101, 101, 0.176) 0%, 
+      rgba(125, 125, 125, 0.242) 100%
     ),
     /* Background pattern */
-    url('/images/background44.jpg') center/cover no-repeat;
+    url('/images/background86.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: -1;
   opacity: 0.9;
@@ -76,7 +74,7 @@
 .products-hero p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
-  color: var(--white);
+  color: var(--medium-gray);
 }
 
 .products-search {
@@ -107,11 +105,9 @@
   overflow: hidden;
   border: 3px solid var(--white);
   border-radius: 20px;
-  width: 1000px;
-  margin-left: 70px;
   box-shadow: 
     0 15px 30px rgba(0, 0, 0, 0.509),
-    0 5px 1px rgba(174, 174, 174, 0.543) inset;
+    0 5px 1px rgba(54, 54, 54, 0.543) inset;
   margin-top: var(--space-xl);
   margin-bottom: 50px;
 }
@@ -125,10 +121,10 @@
   bottom: -20px;
   background: 
     linear-gradient(
-      rgba(249, 249, 249, 0.231),
-      rgba(255, 255, 255, 0.242) 80%
+      rgba(14, 13, 13, 0.192),
+      rgba(0, 0, 0, 0.135) 80%
     ),
-    url('/images/background61.jpg') center/cover no-repeat;
+    url('/images/background92.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: -1;
   opacity: 0.7;
@@ -165,7 +161,7 @@
 .products-cta h2 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: var(--space-md);
-  color: var(--green-dark);
+  color: var(--dark-gray);
 }
 
 /* Product Grid styles */
