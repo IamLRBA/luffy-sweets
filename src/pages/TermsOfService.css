@@ -35,7 +35,7 @@
   filter: blur(2px);
   z-index: -1;
   opacity: 0.6;
-  animation: termsBackgroundFlow 120s linear infinite;
+  animation: termsBackgroundFlow 30s linear infinite;
   background-size: 120% 120%, cover;
   background-blend-mode: overlay;
   border-radius: 25px;
