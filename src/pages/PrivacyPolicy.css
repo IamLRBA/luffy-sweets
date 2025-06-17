@@ -33,7 +33,7 @@
   filter: blur(3px);
   z-index: 0;
   opacity: 0.5;
-  animation: policyBackgroundScroll 100s linear infinite;
+  animation: policyBackgroundScroll 30s linear infinite;
   background-size: 120% 120%;
   background-blend-mode: multiply;
 }

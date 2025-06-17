@@ -34,7 +34,7 @@
   filter: blur(3px);
   z-index: 0;
   opacity: 0.7;
-  animation: contactHeroFlow 80s linear infinite;
+  animation: contactHeroFlow 30s linear infinite;
   background-size: 120% 120%;
   background-blend-mode: soft-light;
 }
