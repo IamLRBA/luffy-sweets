@@ -1,0 +1,69 @@
+@import './ProductDetails.css';
+
+.purple-theme {
+  --theme-color: var(--purple);
+  --theme-light: var(--purple-light);
+  --theme-dark: var(--purple-dark);
+}
+
+.purple-theme .product-details {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #f8f0fc 100%);
+}
+
+.purple-theme .main-image {
+  border: 4px solid var(--theme-color);
+}
+
+.purple-theme .thumbnail.active,
+.purple-theme .thumbnail:hover {
+  border-color: var(--theme-color);
+}
+
+.purple-theme .meta-item {
+  background-color: rgba(156, 81, 182, 0.1);
+  border-left: 3px solid var(--theme-color);
+}
+
+.purple-theme .meta-item:nth-child(even) {
+  background-color: rgba(156, 81, 182, 0.05);
+}
+
+.purple-theme .btn-primary {
+  background-color: var(--theme-color);
+}
+
+.purple-theme .btn-primary:hover {
+  background-color: var(--theme-dark);
+  box-shadow: 0 4px 12px rgba(156, 81, 182, 0.3);
+}
+
+.purple-theme .product-price-large {
+  color: var(--theme-dark);
+}
+
+.purple-theme h1 {
+  color: var(--theme-dark);
+  position: relative;
+  display: inline-block;
+}
+
+.purple-theme h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--theme-color), transparent);
+  border-radius: 3px;
+}
+
+/* Special animation for purple theme */
+.purple-theme .main-image {
+  animation: floatPurple 6s ease-in-out infinite;
+}
+
+@keyframes floatPurple {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

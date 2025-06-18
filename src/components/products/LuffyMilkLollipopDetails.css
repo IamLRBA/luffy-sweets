@@ -1,0 +1,70 @@
+@import './ProductDetails.css';
+
+.cream-theme {
+  --theme-color: #F5DEB3;
+  --theme-light: #FFF8DC;
+  --theme-dark: #D2B48C;
+  --theme-accent: #8B4513;
+}
+
+.cream-theme .product-details {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #fffcf5 100%);
+}
+
+.cream-theme .main-image {
+  border: 4px solid var(--theme-dark);
+}
+
+.cream-theme .thumbnail.active,
+.cream-theme .thumbnail:hover {
+  border-color: var(--theme-dark);
+}
+
+.cream-theme .meta-item {
+  background-color: rgba(245, 222, 179, 0.3);
+  border-left: 3px solid var(--theme-dark);
+}
+
+.cream-theme .meta-item:nth-child(even) {
+  background-color: rgba(245, 222, 179, 0.2);
+}
+
+.cream-theme .btn-primary {
+  background-color: var(--theme-accent);
+}
+
+.cream-theme .btn-primary:hover {
+  background-color: #6B3713;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.cream-theme .product-price-large {
+  color: var(--theme-accent);
+}
+
+.cream-theme h1 {
+  color: var(--theme-accent);
+  position: relative;
+  display: inline-block;
+}
+
+.cream-theme h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--theme-dark), transparent);
+  border-radius: 3px;
+}
+
+/* Special animation for cream theme */
+.cream-theme .main-image {
+  animation: creamGlow 5s ease-in-out infinite alternate;
+}
+
+@keyframes creamGlow {
+  from { box-shadow: 0 0 10px rgba(210, 180, 140, 0.5); }
+  to { box-shadow: 0 0 20px rgba(210, 180, 140, 0.8); }
+}

@@ -1,0 +1,69 @@
+@import './ProductDetails.css';
+
+.orange-theme {
+  --theme-color: var(--orange);
+  --theme-light: var(--orange-light);
+  --theme-dark: var(--orange-dark);
+}
+
+.orange-theme .product-details {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #fff5f0 100%);
+}
+
+.orange-theme .main-image {
+  border: 4px solid var(--theme-color);
+}
+
+.orange-theme .thumbnail.active,
+.orange-theme .thumbnail:hover {
+  border-color: var(--theme-color);
+}
+
+.orange-theme .meta-item {
+  background-color: rgba(255, 127, 63, 0.1);
+  border-left: 3px solid var(--theme-color);
+}
+
+.orange-theme .meta-item:nth-child(even) {
+  background-color: rgba(255, 127, 63, 0.05);
+}
+
+.orange-theme .btn-primary {
+  background-color: var(--theme-color);
+}
+
+.orange-theme .btn-primary:hover {
+  background-color: var(--theme-dark);
+  box-shadow: 0 4px 12px rgba(255, 127, 63, 0.3);
+}
+
+.orange-theme .product-price-large {
+  color: var(--theme-dark);
+}
+
+.orange-theme h1 {
+  color: var(--theme-dark);
+  position: relative;
+  display: inline-block;
+}
+
+.orange-theme h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--theme-color), transparent);
+  border-radius: 3px;
+}
+
+/* Special animation for orange theme */
+.orange-theme .main-image {
+  animation: pulseOrange 4s ease-in-out infinite;
+}
+
+@keyframes pulseOrange {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
