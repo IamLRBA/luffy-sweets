@@ -30,7 +30,7 @@ const Products = () => {
       name: 'Luffy Ice',
       description: 'Refreshing green mint candies that cool your senses',
       price: 2.49,
-      image: '/images/ice.JPG',
+      image: '/images/ice.jpg',
       theme: 'green'
     },
     {
