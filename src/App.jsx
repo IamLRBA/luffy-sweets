@@ -4,6 +4,7 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import BackToTop from './components/common/BackToTop';
 import NavigationButtons from './components/common/NavigationButtons';
+import ToTop from './components/common/ToTop';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
@@ -22,6 +23,7 @@ import './App.css';
 const App = () => {
   return (
     <Router>
+      <ToTop />
       <div className="app">
         <Navbar />
         <main>
