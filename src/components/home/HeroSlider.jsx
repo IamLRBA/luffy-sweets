@@ -8,21 +8,21 @@ const slides = [
   {
     id: 1,
     title: "Sweet Delights for Every Occasion",
-    subtitle: "Premium Quality Confectionery",
+    subtitle: "Premium Quality Confectionery!",
     image: "/images/slide1.jpg",
     bgColor: "var(--orange)"
   },
   {
     id: 2,
     title: "Handcrafted with Love",
-    subtitle: "Traditional Recipes, Modern Twist",
+    subtitle: "Traditional Recipes, Modern Twist!",
     image: "/images/slide2.jpg",
     bgColor: "var(--purple)"
   },
   {
     id: 3,
     title: "A Taste of Happiness",
-    subtitle: "Pure Ingredients, Pure Joy",
+    subtitle: "Pure Ingredients, Pure Joy!",
     image: "/images/slide3.jpg",
     bgColor: "var(--green)"
   }
