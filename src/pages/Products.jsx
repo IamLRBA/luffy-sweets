@@ -30,7 +30,7 @@ const Products = () => {
       name: 'Luffy Ice',
       description: 'Refreshing green mint candies that cool your senses',
       price: 2.49,
-      image: '/images/ice.jpg',
+      image: '/images/ice.JPG',
       theme: 'green'
     },
     {
@@ -39,6 +39,22 @@ const Products = () => {
       description: 'Creamy purple vanilla eclair candies with smooth filling',
       price: 3.99,
       image: '/images/eclairs.jpg',
+      theme: 'purple'
+    },
+    {
+      id: 4,
+      name: 'Luffy Ginger',
+      description: 'Zesty golden ginger drops with a bold, warming kick and a hint of sweetness.',
+      price: 2.99,
+      image: '/images/ginger.PNG',
+      theme: 'purple'
+    },
+    {
+      id: 5,
+      name: 'Luffy Milk Lollipop',
+      description: 'Rich creamy milk lollipops with a smooth melt and nostalgic sweetness.',
+      price: 2.19,
+      image: '/images/milk-lollipop.JPG',
       theme: 'purple'
     }
   ];

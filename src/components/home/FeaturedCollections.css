@@ -24,7 +24,7 @@
   filter: blur(3px);
   z-index: -1;
   opacity: 0.9;
-  animation: backgroundPan 60s linear infinite;
+  animation: backgroundPan 20s linear infinite;
   background-size: 120% 120%;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .collection-image {
-  height: 390px;
+  height: 375px;
   overflow: hidden;
 }
 

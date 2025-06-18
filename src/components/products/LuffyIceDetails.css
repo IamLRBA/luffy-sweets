@@ -1,0 +1,70 @@
+@import './ProductDetails.css';
+
+.green-theme {
+  --theme-color: var(--green);
+  --theme-light: var(--green-light);
+  --theme-dark: var(--green-dark);
+}
+
+.green-theme .product-details {
+  background: linear-gradient(135deg, var(--light-gray) 0%, #f0f9f0 100%);
+}
+
+.green-theme .main-image {
+  border: 4px solid var(--theme-color);
+}
+
+.green-theme .thumbnail.active,
+.green-theme .thumbnail:hover {
+  border-color: var(--theme-color);
+}
+
+.green-theme .meta-item {
+  background-color: rgba(95, 158, 79, 0.1);
+  border-left: 3px solid var(--theme-color);
+}
+
+.green-theme .meta-item:nth-child(even) {
+  background-color: rgba(95, 158, 79, 0.05);
+}
+
+.green-theme .btn-primary {
+  background-color: var(--theme-color);
+}
+
+.green-theme .btn-primary:hover {
+  background-color: var(--theme-dark);
+  box-shadow: 0 4px 12px rgba(95, 158, 79, 0.3);
+}
+
+.green-theme .product-price-large {
+  color: var(--theme-dark);
+}
+
+.green-theme h1 {
+  color: var(--theme-dark);
+  position: relative;
+  display: inline-block;
+}
+
+.green-theme h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--theme-color), transparent);
+  border-radius: 3px;
+}
+
+/* Special animation for green theme */
+.green-theme .main-image {
+  animation: coolWave 8s ease-in-out infinite;
+}
+
+@keyframes coolWave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
