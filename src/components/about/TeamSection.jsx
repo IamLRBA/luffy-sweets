@@ -6,7 +6,9 @@ import {
   FaFlask, 
   FaUtensils, 
   FaCheckCircle, 
+  FaBriefcase,
   FaBullhorn,
+  FaUserTie,
   FaWhatsapp,
   FaInstagram,
   FaFacebook
@@ -37,7 +39,7 @@ const TeamSection = () => {
       description: 'Now leading LD Group Investments LTD, the Managing Director is responsible for overall strategy, growth, and operations of Luffy Sweets. With a commitment to honoring the founder’s vision, they focus on expanding the brand while staying rooted in quality and innovation.',
       isCeo: false,
       funFact: 'Has a sweet tooth for citrus flavors',
-      icon: <FaCheckCircle />,
+      icon: <FaUserTie />,
       whatsapp: '#',
       instagram: '#',
       facebook: '#'
@@ -45,12 +47,12 @@ const TeamSection = () => {
     {
       id: 3,
       name: 'Kenneth Musasizi',
-      position: 'Secretary /Director',
+      position: 'Secretary/Director',
       image: '/images/sizi.jpg',
       description: 'Sizi plays a crucial role in keeping the company organized, connected, and efficient. As Secretary, he bridges communication between departments, ensures regulatory compliance, and supports execution of the company’s core initiatives especially those that bring Luffy Sweets closer to communities.',
       isCeo: false,
       funFact: 'Developed our best-selling mango chili candy',
-      icon: <FaUtensils />,
+      icon: <FaBriefcase />,
       whatsapp: '#',
       instagram: '#',
       facebook: '#'

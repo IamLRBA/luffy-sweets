@@ -8,21 +8,21 @@ const FeaturedCollections = () => {
       id: 1,
       name: 'Luffy Lollipop Collection',
       description: 'Our signature orange-flavored lollipops in various sizes',
-      image: '/images/lollipop-collection.JPG',
+      image: '/images/lollipop-collection.jpg',
       theme: 'orange'
     },
     {
       id: 2,
       name: 'Luffy Ice Collection',
       description: 'Cool mint candies perfect for hot days',
-      image: '/images/ice-collection.JPG',
+      image: '/images/ice-collection.jpg',
       theme: 'green'
     },
     {
       id: 3,
       name: 'Luffy Eclairs Collection',
       description: 'Creamy chocolate eclair candies with smooth filling',
-      image: '/images/eclair-collection.JPG',
+      image: '/images/eclair-collection.jpg',
       theme: 'purple'
     },
     {

@@ -20,7 +20,7 @@ const ContactInfo = () => {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      content: "jerrylarubafestus@gmail.com",
+      content: "luffysweets@gmail.com",
       color: "var(--purple)"
     },
     {
