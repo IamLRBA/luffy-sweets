@@ -94,7 +94,7 @@ const Products = () => {
       <div className="products-cta">
         <h2>Can't find what you're looking for?</h2>
         <Link to="/contact" className="btn btn-primary">
-          Contact Us
+          Contact Us!
         </Link>
       </div>
     </div>
