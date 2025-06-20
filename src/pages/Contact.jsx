@@ -28,7 +28,7 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            We'd love to hear from you! Reach out for inquiries, feedback, or just to say hello.
+            We'd love to hear from you! Reach out for inquiries, feedback, or just to say hello to us!.
           </motion.p>
         </div>
       </motion.section>
