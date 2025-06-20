@@ -4,7 +4,7 @@
 
 ---
 
-A modern, responsive website for Luffy Sweets, a premium sweets manufacturer based in Jinja, Uganda. This platform showcases products, facilitates orders, and provides company information through an engaging user interface.
+A modern, responsive website designed by LRBA for Luffy Sweets, a premium sweets manufacturer based in Jinja, Uganda. This platform showcases products, facilitates orders, and provides company information through an engaging user interface.
 
 ---
 
