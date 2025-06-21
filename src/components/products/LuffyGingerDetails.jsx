@@ -15,7 +15,7 @@ const LuffyGingerDetails = () => {
     price: 1.99,
     images: [
       '/images/ginger-1.jpg',
-      '/images/ginger-2.jpg',
+      '/images/ginger-2.png',
       '/images/ginger-3.jpg'
     ],
     details: {
