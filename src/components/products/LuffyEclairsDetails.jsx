@@ -14,7 +14,7 @@ const LuffyEclairsDetails = () => {
     description: 'Indulge in our creamy vanilla eclair candies with smooth filling. Each piece offers a perfect balance of rich vanilla flavor and melt-in-your-mouth texture.',
     price: 3.99,
     images: [
-      '/images/eclairs-1.jpg',
+      '/images/eclairs-1.png',
       '/images/eclairs-2.jpg',
       '/images/eclairs-3.jpg'
     ],
