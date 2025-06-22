@@ -25,13 +25,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    /* Your original gradient with enhanced opacity */
+  background:
     linear-gradient(135deg, 
       rgba(101, 101, 101, 0.176) 0%, 
       rgba(125, 125, 125, 0.242) 100%
     ),
-    /* Background pattern */
     url('/images/background86.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: -1;
@@ -230,7 +228,6 @@
   justify-content: space-between;
 }
 
-/* Product details page */
 .product-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -362,7 +359,7 @@
 
 .products-search input {
   width: 100%;
-  padding: 0.75rem 1.5rem 0.75rem 3rem; /* Added left padding for icon */
+  padding: 0.75rem 1.5rem 0.75rem 3rem;
   border: 2px solid var(--medium-gray);
   border-radius: var(--radius-lg);
   font-size: 1rem;
@@ -370,7 +367,6 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Search icon */
 .products-search::before {
   content: "";
   position: absolute;

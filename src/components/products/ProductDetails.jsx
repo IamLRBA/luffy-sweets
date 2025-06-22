@@ -7,7 +7,6 @@ const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
   const [activeImage, setActiveImage] = useState(0);
 
-  // In a real app, you would fetch this data based on the ID
   const product = {
     id: 1,
     name: 'Luffy Lollipop',

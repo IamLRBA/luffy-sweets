@@ -34,7 +34,6 @@
   top: -1px;
 }
 
-/* Hover Effects */
 .back-to-top:hover {
   background-color: var(--orange-dark);
   box-shadow: 0 6px 16px rgba(255, 127, 63, 0.4);
@@ -45,12 +44,10 @@
   transform: scale(1.2);
 }
 
-/* Press Effect */
 .back-to-top:active {
   animation: buttonPress 0.3s ease-out;
 }
 
-/* Glow Effect */
 .back-to-top::after {
   content: '';
   position: absolute;
@@ -68,7 +65,6 @@
   opacity: 1;
 }
 
-/* Tooltip */
 .tooltip {
   position: absolute;
   bottom: -2.8rem;

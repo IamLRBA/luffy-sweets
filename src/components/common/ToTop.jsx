@@ -6,10 +6,10 @@ const ToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top when path changes
+    window.scrollTo(0, 0); 
   }, [pathname]);
 
-  return null; // This component doesn't render anything
+  return null; 
 };
 
 export default ToTop;

@@ -24,12 +24,10 @@
   right: -10%;
   bottom: -10%;
   background: 
-    /* Color-matched overlay */
     linear-gradient(135deg, 
       rgba(164, 163, 162, 0.08) 0%, 
       rgba(192, 192, 192, 0.08) 100%
     ),
-    /* Background pattern */
     url('/images/background96.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: 0;

@@ -54,7 +54,7 @@ const OrderNow = () => {
   };
 
   const sendWhatsAppNotification = () => {
-    const phoneNumber = '256700416812'; // Business owner's WhatsApp number without +
+    const phoneNumber = '256700416812'; 
     const message = `🚀 *New Order Received!* 🚀
 
 *Customer Details:*

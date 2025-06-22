@@ -348,7 +348,6 @@
   }
 }
 
-/* Update the title highlight */
 .section-title .highlight-border {
   position: relative;
   display: inline-block;
@@ -372,7 +371,6 @@
   transform-origin: left;
 }
 
-/* Update the icon styles */
 .history-icon {
   font-size: 1.2rem;
   min-width: 40px;
@@ -416,7 +414,6 @@
   transform: translateY(-5px);
 }
 
-/* Update the image box */
 .history-image-box {
   border: 2px solid var(--light-gray);
   border-radius: 0.5rem;
@@ -442,7 +439,6 @@
   transform: scale(1.02);
 }
 
-/* Remove the image overlay and frame rotation */
 .image-overlay {
   display: none;
 }

@@ -14,12 +14,10 @@
   right: -10%;
   bottom: -10%;
   background: 
-    /* Color-enhancing overlay */
     linear-gradient(135deg, 
       rgba(29, 65, 18, 0.55) 0%, 
       rgba(25, 65, 33, 0.516) 100%
     ),
-    /* Background pattern */
     url('/images/background82.jpg') center/cover no-repeat;
   filter: blur(5px);
   z-index: 0;
@@ -29,7 +27,6 @@
   background-blend-mode: overlay;
 }
 
-/* Diagonal flow animation */
 @keyframes statsBackgroundFlow {
   0% { 
     background-position: 0% 0%;
@@ -45,7 +42,6 @@
   }
 }
 
-/* Mobile adaptation */
 @media (max-width: 768px) {
   .stats-section::before {
     animation: statsBackgroundPanMobile 90s linear infinite;
@@ -58,7 +54,6 @@
   }
 }
 
-/* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .stats-section::before {
     animation: none;
@@ -83,7 +78,6 @@
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
-  /* Glass effect enhancement */
   background-color: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(8px);
   box-shadow: 
@@ -98,8 +92,7 @@
   left: -20px;
   right: -20px;
   bottom: -20px;
-  background: 
-    /* Color-adaptive overlay */
+  background:
     linear-gradient(
       rgba(255, 255, 255, 0.05),
       rgba(255, 255, 255, 0.15) 80%

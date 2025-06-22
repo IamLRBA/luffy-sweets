@@ -77,12 +77,10 @@
   right: -10%;
   bottom: -10%;
   background: 
-    /* Enhanced version of your gradient */
     linear-gradient(135deg, 
       rgba(255, 127, 63, 0.08) 0%, 
       rgba(156, 81, 182, 0.08) 100%
     ),
-    /* Background pattern */
     url('/images/background92.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: -1;

@@ -7,7 +7,7 @@
 .message-content {
   max-width: 900px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.92); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.92);
   padding: var(--space-xl);border: 3px solid var(--white);
   box-shadow: 
     0 15px 30px rgba(0, 0, 0, 0.58),
@@ -15,7 +15,7 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(2px); /* Subtle glass effect */
+  backdrop-filter: blur(2px); 
 }
 
 .message-content::before {
@@ -34,9 +34,9 @@
   filter: blur(4px);
   z-index: -1;
   opacity: 0.7;
-  animation: backgroundPan 30s linear infinite; /* Very slow movement */
+  animation: backgroundPan 30s linear infinite;
   background-size: 120% 120%;
-  border-radius: calc(var(--radius-lg) + 20px); /* Match container radius */
+  border-radius: calc(var(--radius-lg) + 20px);
 }
 
 /* Existing animation reused */
@@ -156,7 +156,6 @@ textarea {
   border-top: 1px solid rgba(95, 158, 79, 0.1);
   position: relative;
   overflow: hidden;
-  /* Glass effect overlay */
   backdrop-filter: blur(1px);
 }
 
@@ -167,8 +166,7 @@ textarea {
   left: -10px;
   right: -10px;
   bottom: -10px;
-  background: 
-    /* Green tint matching your theme */
+  background:
     linear-gradient(
       rgba(63, 117, 50, 0.717),
       rgba(35, 70, 26, 0.637) 80%
@@ -176,10 +174,10 @@ textarea {
     url('/images/background15.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: -1;
-  opacity: 0.4; /* Very subtle */
-  animation: backgroundPan 120s linear infinite; /* Slowest animation */
+  opacity: 0.4;
+  animation: backgroundPan 120s linear infinite;
   background-size: 120% 120%;
-  border-radius: calc(var(--radius-md) + 10px); /* Match container */
+  border-radius: calc(var(--radius-md) + 10px);
 }
 
 .whatsapp-header {

@@ -5,7 +5,6 @@ const Gallery = () => {
   const [expandedImage, setExpandedImage] = useState(null);
   const [images, setImages] = useState([]);
 
-  // Local image paths (to be placed in public/images folder)
   const localImages = [
     { id: 1, filename: 'image1.jpg', alt: 'Delicious chocolate cake' },
     { id: 2, filename: 'image2.jpg', alt: 'Colorful macarons' },
@@ -40,7 +39,6 @@ const Gallery = () => {
     setImages(loadedImages);
   }, []);
 
-  // Animation loop (fixed with let instead of const)
   useEffect(() => {
     if (expandedImage) return;
 
