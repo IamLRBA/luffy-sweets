@@ -58,7 +58,6 @@
   border-radius: 3px;
 }
 
-/* Special animation for green theme */
 .green-theme .main-image {
   animation: coolWave 8s ease-in-out infinite;
 }

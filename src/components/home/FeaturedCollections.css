@@ -14,8 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    /* White gradient overlay to maintain brightness */
+  background:
     linear-gradient(
       rgba(81, 182, 88, 0.584),
       rgba(129, 219, 119, 0.623) 80%
@@ -28,13 +27,11 @@
   background-size: 120% 120%;
 }
 
-/* Content container to ensure readability */
 .featured-collections-content {
   position: relative;
   z-index: 1;
 }
 
-/* Reuse the same animation */
 @keyframes backgroundPan {
   0% { background-position: 0% 0%; }
   25% { background-position: 40% 10%; }

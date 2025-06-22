@@ -10,7 +10,6 @@
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  /* Glass effect with your existing shadows */
   box-shadow: 
     0 15px 30px rgba(17, 17, 17, 0.422),
     0 5px 1px rgba(53, 53, 53, 0.543) inset;
@@ -24,13 +23,11 @@
   left: -10%;
   right: -10%;
   bottom: -10%;
-  background: 
-    /* Legal document texture overlay */
+  background:
     linear-gradient(
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0) 80%
     ),
-    /* Background pattern */
     url('/images/background85.jpg') center/cover no-repeat;
   filter: blur(2px);
   z-index: -1;

@@ -58,7 +58,6 @@
   border-radius: 3px;
 }
 
-/* Special animation for purple theme */
 .purple-theme .main-image {
   animation: floatPurple 6s ease-in-out infinite;
 }

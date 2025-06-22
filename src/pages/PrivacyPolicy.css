@@ -22,13 +22,11 @@
   left: -10%;
   right: -10%;
   bottom: -10%;
-  background: 
-    /* Color-coordinated overlay */
+  background:
     linear-gradient(135deg, 
       rgba(255, 127, 63, 0.05) 0%, 
       rgba(95, 158, 79, 0.05) 100%
     ),
-    /* Background pattern */
     url('/images/background94.jpg') center/cover no-repeat;
   filter: blur(3px);
   z-index: 0;

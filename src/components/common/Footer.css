@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Great+Vibes&display=swap');
 
-/* Base Footer Styles */
 .site-footer {
   color: white;
   padding: var(--space-xl) 0 0;
@@ -52,7 +51,6 @@
   }
 }
 
-/* Wave Decoration */
 .footer-wave {
   position: absolute;
   top: 0px;
@@ -63,7 +61,6 @@
   background-size: cover;
 }
 
-/* Layout */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -97,7 +94,6 @@
   letter-spacing: 1px;
 }
 
-/* Cake Icon */
 .footer-logo .logo-icon {
   width: 2.5rem;
   height: 4.5rem;
@@ -117,7 +113,6 @@
   z-index: 1;
 }
 
-/* Section Headings */
 .footer-section h3 {
   color: var(--orange);
   font-family: 'Raleway', sans-serif;
@@ -145,7 +140,6 @@
   line-height: 1.6;
 }
 
-/* Lists & Links */
 .footer-section ul {
   list-style: none;
   padding-left: 0;
@@ -178,7 +172,6 @@
   transform: translateY(-50%) scale(1.4);
 }
 
-/* Link Icons */
 .link-icon {
   width: 1.2rem;
   height: 1.2rem;
@@ -193,7 +186,6 @@
   color: var(--orange-bright);
 }
 
-/* Business Hours */
 .business-hours {
   font-family: 'Raleway', sans-serif;
   background: rgba(255,255,255,0.05);
@@ -212,7 +204,6 @@
   stroke-width: 1.5;
 }
 
-/* Social Media Icons */
 .social-media {
   margin-top: var(--space-md);
 }
@@ -256,7 +247,6 @@
   stroke-width: 1.5;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   padding: var(--space-md) 0;
