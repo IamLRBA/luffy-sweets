@@ -83,7 +83,7 @@ REACT_APP_BASE_API_URL=https://api.example.com
 #### Start development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
 #### Run test suite:
