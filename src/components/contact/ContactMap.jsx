@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import './ContactMap.css';
 
 const ContactMap = () => {
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7425000000003!2d33.2025!3d0.424722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjUnMjkuMCJOIDMzwzAxMicxNS4wIkU!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus`;
+  const mapUrl = `https://www.google.com/maps/dir//Muchungwa+road,+Jinja/@0.4625156,33.1674355,11357m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x177e7da6e8a7d121:0x6c7e8793ff0550b5!2m2!1d33.2086357!2d0.4624299?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D`;
 
   return (
     <motion.div 
