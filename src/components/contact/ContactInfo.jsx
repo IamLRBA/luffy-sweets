@@ -8,13 +8,13 @@ const ContactInfo = () => {
     {
       icon: <FaMapMarkerAlt />,
       title: "Address",
-      content: "Jinja, Uganda",
+      content: "Muchungwa road, Jinja",
       color: "var(--orange)"
     },
     {
       icon: <FaPhone />,
       title: "Phone",
-      content: ["+256 750 367229", "+256 767 206229"],
+      content: ["+256 750 367229", "+256 767 206229", "+256 700 416812"],
       color: "var(--green)"
     },
     {
